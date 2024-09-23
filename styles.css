@@ -1,0 +1,699 @@
+/* global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url('./img/crumpledpaper.jpg') no-repeat center center fixed; /* Crumpled paper background */
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    background-color: transparent; /* Ensure the main section has a transparent background */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-family: omori2;
+} 
+
+/* header part */
+
+/* customized fonts initialization */
+@font-face {
+        font-family: 'omori';
+        src: url('fonts/omori.ttf') format('truetype'),
+             url('fonts/omori.woff') format('woff'),
+             url('fonts/omori.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'omori2';
+        src: url('fonts/omori2.ttf') format('truetype'),
+             url('fonts/omori2.woff') format('woff'),
+             url('fonts/omori2.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'braden';
+        src: url('fonts/braden.ttf') format('truetype'),
+             url('fonts/braden.woff') format('woff'),
+             url('fonts/braden.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'davemer';
+        src: url('fonts/davemer.ttf') format('truetype'),
+             url('fonts/davemer.woff') format('woff'),
+             url('fonts/davemer.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'keycaps';
+        src: url('fonts/keycaps.ttf') format('truetype'),
+             url('fonts/keycaps.woff') format('woff'),
+             url('fonts/keycaps.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'poppins';
+        src: url('fonts/poppins.ttf') format('truetype'),
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'poppins_semib';
+        src: url('fonts/poppins_semib.ttf') format('truetype'),
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'poppins_bold';
+        src: url('fonts/poppins_bold.ttf') format('truetype'),
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'edhand';
+        src: url('fonts/edhand.ttf') format('truetype'),
+             url('fonts/edhand.woff')format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'crayoncr';
+        src: url('fonts/crayoncr.ttf') format('truetype'),
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+header /* for the word "headspace"*/ {
+    font-family: 'omori'   
+}
+
+header /* for the background */ {
+    background:url('/img/omoribg.jpg') ;
+    background-size: cover;
+    padding-top: 5px;
+    min-height: 95px;
+    border-bottom: #000 3px solid;
+}
+
+#maintitle {
+    margin-left: 60px;
+    padding-top: 5px;
+    margin-top: 0px;
+    float:left;
+}
+
+#homebuttons {
+    font-family: 'omori2';
+}
+
+
+header li {
+    float: right;
+    display: inline;
+    padding: 0 10px 0 15px;
+    border: 1px solid #343;
+    margin: 0 5px;
+    
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+header nav {
+    float:right;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+a:hover {
+    color: #BF2EF0;
+  }
+
+#welcometitle {
+    font-family: keycaps;
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    opacity: 0; 
+    font-size: 30px;
+    animation: fadeIn 5s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+#obulb-container {
+    position: relative
+}
+
+#obulb {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#openingtexts {
+    font-family: davemer;
+}
+
+.pixel-box, .pixel-box2 {
+    margin-top: 30px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow:
+        2px 2px 0px #333, /* Outer shadow (dark) */
+        6px 6px 0px #666, /* Middle shadow */
+        8px 8px 0px #999; /* Lighter shadow */
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.pixel-box {
+    float: left; 
+    margin-left: 150px;
+    margin-right:170px; 
+}
+
+#spoti {
+    margin-right: 100px;
+    margin-left: -5px;
+    padding-top: 50px;
+}
+
+.pixel-box2 {
+    margin-right: 160px;
+    float: right; 
+}
+
+
+
+/* ABOUT ME */
+
+#titleme {
+    margin-left: 90px;
+    padding-top: 5px;
+    margin-top: 10px;
+    float:left;
+}
+
+.titlec {
+    padding-top: 20px;
+}
+
+#homebuttons1 {
+    padding-top: 20px;
+    font-family: omori2;
+    padding-right: 50px;
+}
+
+#description {
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+    }
+    
+}
+
+#geninfo p {
+    margin-bottom: 20px;
+}
+
+#intro h1 {
+    text-align: center;
+    font-family: omori2;
+    font-size: 60px;
+}
+
+#intro p {
+    font-family: davemer;
+    font-size: 30px;
+    text-align: center;
+}
+
+#truth {
+    text-align: center;
+    font-family: davemer;
+    font-size: 20px;
+}
+
+#name {
+    text-align: center;
+    font-family: omori2;
+}
+
+#geninfo {
+    border: 2px solid #000; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    width: 80%; 
+    margin: 20px auto; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+    font-family: omori2;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.red {
+    color: red;
+}
+
+.violet {
+    color: rgb(82, 6, 82);
+}
+
+.pink {
+    color: rgb(238, 106, 128);
+}
+
+
+#favorite-movies {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-box {
+    background-color: #dfdfdf; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.movie-item {
+    position: relative;
+}
+
+.movie-item img {
+    display: block;
+    transition: opacity 0.3s ease; 
+}
+
+
+.movie-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-family: poppins_bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease; 
+}
+
+.movie-item:hover img {
+    opacity: 0.10; 
+}
+
+.movie-item:hover .movie-text {
+    opacity: 10; 
+}
+
+#movie-title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: poppins_semib;
+    font-size: 30px;
+    color: #000000;
+}
+
+/* Style for the section */
+#favorite-characters {
+    text-align: center;
+    margin-top: 30px; 
+    background-color: #dfdfdf;
+}
+
+#characters-title {
+    font-family: poppins_semib;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px; /* Space between title and images */
+}
+
+/* Style for the section */
+#favorite-characters {
+    text-align: center;
+    margin-top: 30px; /* Space above the section for the title */
+}
+
+#characters-title {
+    font-family: poppins_semib;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px; /* Space between title and images */
+}
+
+#favorite-characters {
+    background-color: #dfdfdf; 
+    padding: 40px 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px; /* Add space below the section */
+}
+
+
+#characters-title {
+    font-family: poppins_semib;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.character-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.character-item {
+    position: relative;
+    border-radius: 50%; 
+    overflow: hidden; 
+    width: 150px; 
+    height: 150px; 
+}
+
+.character-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.3s ease; 
+    border-radius: 50%; 
+}
+
+.character-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-size: 12px;
+    font-family: poppins_bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease; 
+}
+
+.character-item:hover img {
+    opacity: 0.10; 
+}
+
+.character-item:hover .character-text {
+    opacity: 1; 
+}
+
+.button-wrapper {
+    text-align: center; /* Center buttons within the wrapper */
+}
+
+.styled-button {
+    display: inline-block;
+    font-family: 'omori2'; /* Font for the button text */
+    font-size: 20px;
+    color: black; /* No color for the button */
+    text-decoration: none; /* Remove underline */
+    margin-top: 30px; /* Margin on top */
+    margin-bottom: 50px; /* Margin on bottom */
+    padding: 0 10px 0 15px; /* Padding around the text */
+    border: 1px solid #000; /* Transparent border */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.styled-button:hover {
+    color: #BF2EF0; /* Hover color for the text */ 
+}
+
+.prosesc {
+    padding-top: 10px;
+}
+
+#prose-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#section-title {
+    font-family: 'omori2';
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#section-description {
+    font-family: 'davemer';
+    font-weight: bold;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 70px;
+}
+
+.prose-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 0; /* No space between boxes */
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.prose-box {
+    border: 1px solid black; /* Adjusted border thickness */
+    background-color: #EDE8DC;
+    padding: 0px 20px; /* Adjusted padding to maximize text area */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.prose-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Makes the title grow to consume available space */
+}
+
+.prose-box p {
+    font-size: 14px;
+    flex-grow: 1; /* Makes the paragraph grow to consume available space */
+}
+
+#title1, #title2, #title3, #title4, #title5, #title6 {
+    font-family: omori2;
+}
+
+#pprose1, #pprose2, #pprose3, #pprose4, #pprose5, #pprose6 {
+    font-family: monospace, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0; /* Remove default margin to maximize space */
+    flex-grow: 1; /* Ensure paragraphs take up available space */
+}
+
+#pprose1 p {
+    padding-top: 20px;
+}
+
+#pprose4 p {
+    padding-top: 50px;
+}
+
+#pprose6 p {
+    padding-top: 30px;
+}
+
+
+.button-wrapper2 {
+    text-align: center; /* Center buttons within the wrapper */
+}
+
+.styled-button1 {
+    display: inline-block;
+    font-family: 'omori2'; /* Font for the button text */
+    font-size: 20px;
+    color: black; /* No color for the button */
+    text-decoration: none; /* Remove underline */
+    margin-top: 0px; /* Margin on top */
+    margin-bottom: 50px; /* Margin on bottom */
+    padding: 0 10px 0 15px; /* Padding around the text */
+    border: 1px solid #000; /* Transparent border */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.styled-button1:hover {
+    color: #BF2EF0; /* Hover color for the text */ 
+}
+
+
+#titleme {
+    margin-left: 90px;
+    padding-top: 5px;
+    margin-top: 0px;
+    float:left;
+}
+
+#homebuttons1 {
+    padding-top: 20px;
+    font-family: omori2;
+    padding-right: 50px;
+}
+
+.button-container-wrapper {
+    background-color: #dfdfdf; /* Background color of the container */
+    padding: 40px 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    width: 80%; /* Width of the container */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center the title and buttons */
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.ctctitle {
+    font-family: 'omori2'; /* Font for the title */
+    font-size: 36px;
+    margin-bottom: 20px; /* Space between the title and buttons */
+}
+
+
+.contactc {
+    padding-top: 20px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the first two rows */
+    grid-template-rows: repeat(2, auto) auto; /* 2 rows for the first 6 buttons, 1 row for the last button */
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Centers the grid items horizontally */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text and icon inside the button */
+    background-color: #CDC1FF; /* Button background color */
+    color: black;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Ensure the button fills the width of its grid cell */
+}
+
+.social-button:hover {
+    background-color: #E5D9F2; /* Button hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Remove text decoration from anchor tags */
+.button-container a {
+    text-decoration: none; /* Remove underline or other text decorations */
+    color: black; /* Ensures text color is consistent with button color */
+}
+
+/* Add styles for the disabled buttons */
+.disabled-button {
+    background-color: #CDC1FF; /* Same color as other buttons */
+    cursor: default; /* Show default cursor to indicate inactivity */
+}
+
+/* Ensure the Last.fm button is centered with placeholder buttons on both sides */
+.button-container > .social-button:nth-child(8) {
+    justify-self: center; /* Center the button */
+}
+
+.button-wrapper3 {
+    text-align: center; /* Center buttons within the wrapper */
+}
+
+.styled-button2 {
+    display: inline-block;
+    font-family: 'omori2'; /* Font for the button text */
+    font-size: 20px;
+    color: black; /* No color for the button */
+    text-decoration: none; /* Remove underline */
+    margin-top: 5px; /* Margin on top */
+    margin-bottom: 50px; /* Margin on bottom */
+    padding: 0 10px 0 15px; /* Padding around the text */
+    border: 1px solid #000; /* Transparent border */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.styled-button2:hover {
+    color: #BF2EF0; /* Hover color for the text */ 
+}
+
